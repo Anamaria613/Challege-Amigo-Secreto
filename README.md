@@ -45,7 +45,7 @@ El usuario puede agregar nombres a una lista y luego realizar un sorteo aleatori
 
 ## 👨‍💻 Autor
 
-Desarrollado por Anamaría Montes Gamboa  
+Desarrollado por Anamaría613  
 
 ---
 
