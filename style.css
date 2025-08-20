@@ -1,0 +1,193 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #E8EDF6;
+    --color-tertiary: #ffc62a;
+    --color-tertiary-hover: #FEBD0E;
+    --color-button: #FF2E6F;
+    --color-button-hover: #E5165A;
+    --color-button-restart: #bfbfbf;       /* Gris claro */
+    --color-button-restart-hover: #b0b0b0; /* Gris más oscuro */
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 2px solid #cfd9e9;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ced8eb;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px #ced8eb;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* separación entre botones */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #E5165A;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;          /* para alinear ícono y texto */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;              /* espacio entre icono y texto */
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+    border: 2px solid var(--color-tertiary-hover);
+    box-shadow: 0 4px 8px #ced8eb;
+}
+
+.button-add:hover {
+    background-color: var(--color-tertiary-hover);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón de sortear */
+.button-draw {
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    padding: 10px 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Botón de reinicio */
+.button-restart {
+    color: var(--color-white);
+    background-color: var(--color-button-restart);
+    font-size: 16px;
+    padding: 10px 40px;
+    border: 2px solid var( --color-button-restart-hover);
+   
+}
+
+.button-restart:hover {
+    background-color: var(--color-button-restart-hover);
+}
+
+/* Íconos dentro de botones */
+.button-draw img,
+.button-restart img {
+    width: 24px;
+    height: 24px;
+}
+.header-banner img{
+    width: 220px;
+    height: 220px;
+}
